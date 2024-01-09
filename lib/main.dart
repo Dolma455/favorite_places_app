@@ -1,5 +1,6 @@
 import 'package:favorite_places_app/app/app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final colorScheme = ColorScheme.fromSeed(
@@ -20,5 +21,5 @@ final theme = ThemeData().copyWith(
         titleLarge: GoogleFonts.ubuntuCondensed(fontWeight: FontWeight.bold)));
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }

@@ -24,6 +24,7 @@ class PlacesList extends StatelessWidget {
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
-            )));
+            ))
+            );
   }
 }
